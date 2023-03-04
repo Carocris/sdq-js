@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Área y Perímetro</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    
+<h1>Calculadora de Área y Perímetro</h1>
+    
+<div class="container">
+
+    <div  class="area">
+        <label for="figura">Seleccione una figura:</label>
+        <select id="figura">
+            <option value="triangulo">Triángulo</option>
+            <option value="cuadrado">Cuadrado</option>
+            <option value="rectangulo">Rectángulo</option>
+            <option value="circulo">Círculo</option>
+        </select>
+    </div>
+    
+    <div class="area">
+      <label for="lado1">Lado 1:</label>
+      <input type="number" id="lado1">
+    </div>
+    
+    <div class="area">
+      <label for="lado2">Lado 2:</label>
+      <input type="number" id="lado2">
+    </div>
+    
+    <div class="area">
+      <label for="base">Base:</label>
+      <input type="number" id="base">
+    </div>
+    
+    <div class="area">
+      <label for="altura">Altura:</label>
+      <input type="number" id="altura">
+    </div>
+    
+    <div class="area">
+      <label for="diametro">Diámetro:</label>
+      <input type="number" id="diametro">
+    </div>
+    
+    <button class="button"  onclick="calcular()">Calcular</button>
+    
+    <div id="resultado"></div>
+
+</div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
+
+   
+
+
+    <script src="main.js"></script>
+</body>
+</html>

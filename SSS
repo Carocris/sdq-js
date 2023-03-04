@@ -1,0 +1,85 @@
+ <h1>Calculadora de Área y Perímetro</h1>
+
+
+        <ul class="container">
+            <li class="area">
+                <div class="rect-box">
+                    <h3>Área del triangulo</h3>
+                        <input type="text" id="base" placeholder="Base/Lado">                       
+                        <button class ="btn1" onclick="calAreaTriangle()">Calcular</button> 
+                        <input type="button" class ="btn2" value="Limpiar" onclick="location.reload()">
+                </div>
+                <span class="peri">Triangulo</span>
+    
+            </li>
+    
+            <li class="area">
+                <div class="rect-box"></div>
+                <span class="peri">Cuadrado</span>
+    
+            </li>
+    
+            <li class="area">
+                <div class="rect-box"></div>
+                <span class="peri">Rectángulo</span>
+    
+            </li>
+    
+            <li class="area">
+                <div class="rect-box"></div>
+                <span class="peri">Círculo</span>
+    
+            </li>
+    
+            *{
+                padding:0%;
+                margin: 0%;
+                box-sizing: border-box;
+                font-family: 'Courier New', Courier, monospace;
+            }
+            
+            body{
+                
+                background-color: beige;
+            }
+            
+            .container{
+                margin: 20px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            h1{
+                text-align: center;
+            }
+            
+            .container .area{
+            list-style: none;
+            margin: 36px;
+            padding: 7px;
+            cursor: pointer;
+            border-radius: 8px;
+            text-align: center;
+            background-color: #fff;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0);
+            transition: transform 0.3s ease;
+            }
+            .container .area:active {
+                transform: scale(0.95);
+            }
+            
+            .area .rect-box{
+                width: 500px;
+                height: 300px;
+                border-radius: 6px;
+                background-color: #FF6A88;
+            }
+            
+            .area .peri{
+                display: block;
+                margin: 12px 0 8px;
+                color:black;
+                font-size: 1.1em;
+                font-weight: 500;
+            }
